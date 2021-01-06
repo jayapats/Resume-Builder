@@ -1,0 +1,34 @@
+#questionnaire-div {
+    width: 800px;
+    margin: 50px auto;
+}
+
+.questionnaire-form {
+    margin-bottom: 15px;
+    background: #f3f3f3;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+#questionnaire-div h2 {
+    margin: 0 0 15px;
+}
+
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+
+.btn {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.questionnaire-form .iti.iti--allow-dropdown {
+    display: block !important;
+}
+
+.form-group.required .control-label:after {
+    content: "*";
+    color: red;
+}
