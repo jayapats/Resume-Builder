@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="img/logo.png">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+        
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    
+    </script>
+    <title>Resume Maker - Preview Data</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all">
+    <link href="//fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/intlTelInput.min.css">
+    <script>
+        if (!localStorage.getItem('token')) {
+            window.location.replace('index.html');
+        }
+    </script>
+</head>
+
+<body>
+
+<section class="main">
+    <div class="layer">
+        <header>
+            <div class="bottom-grid">
+                <div class="links">
+                    <!-- Navbar brand -->
+                    <ul class="links-unordered-list">
+                        <li class="active">
+                            <a class="navbar-brand" href="index.html">Resume Maker</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="links">
+                    <ul class="links-unordered-list">
+                        <li class="active">
+                            <a href="signup.html" class="">Register</a>
+                        </li>
+                        <li class="active">
+                            <a href="about.html" class="">About Us</a>
+                        </li>
+                        <li class="active">
+                            <a id="logout" class="nav-link" href>Logout
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <main>
+                <div class="container pt-5">
+                    
+                    <!-- grid row -->
+                    <div class="row">
+                        
+                        <div class="col-md-8 preview-div m-auto">
+                            <h2>You have entered the following details:</h2>
+                            <table class="table text-white table-dark table-striped rounded">
+                                <thead class="table text-white table-dark table-striped rounded">
+                                <tr>
+                                    <th scope="col">Field</th>
+                                    <th scope="col">Your Input</th>
+                                    <th scope="col">
+                                        
+                                        <div class="wthree-field">
+                                            <button onclick="editMe()" type="submit" class="btn btn-primary btn-block ">
+                                                Edit
+                                            </button>
+                                        </div>
+                                    
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody id="preview_data">
+                                </tbody>
+                            </table>
+                            <div class="wthree-field">
+                                <button type="submit" class="btn btn-primary btn-block" id="show-template">Generate
+                                    Resume
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        
+        </header>
+        
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <script src="js/modules/intlTelInput.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/modules/events-handler.js"></script>
+        
+        <script>
+            
+            function editMe() {
+                //$(':input').removeAttr('readonly');
+                $(' input[type="text"]').prop("disabled", false);
+                $(' input[type="text"]').css('backgroundColor', 'white');
+                $(' input[type="text"]').css('color', 'black');
+            }
+        
+        </script>
+    </div>
+    <footer>
+        <div class="bottom-grid1">
+            <div class="links">
+                <ul class="links-unordered-list">
+                    <li class="">
+                        <a href="about.html" class="">About Us</a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="">Privacy Policy</a>
+                    </li>
+                    <li class="">
+                        <a target="_blank" href="https://pastebin.com/3WXmsxsU" class="">Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>© 2019 Key. All rights reserved </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</section>
+
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+
+<script src="js/jquery.validate.min.js"></script>
+
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script src="js/modules/intlTelInput.js"></script>
+<script src="js/modules/events-handler.js"></script>
+<style>
+    #unique {
+        background: transparent;
+        border: none;
+        color: white;
+        outline: none;
+        
+    }
+</style>
+<script>
+    var map = {
+        'personalInfo': 'Personal Information',
+        'websites': 'Your Websites / Online Presence',
+        'education': 'Education / Academics',
+        'skills': 'Skills',
+        'experience': 'Professional Experience',
+        'projects': 'Academic Projects',
+        'accoladesInterests': 'Accolades, Activities and Interests',
+        'name': 'Name',
+        'emailID': 'Email Address',
+        'contactNumber': 'Contact Number',
+        'mailingAddress': 'Mailing Address',
+        'careerObjective': 'Career Objective',
+        'ownWebsite': 'Your Website',
+        'linkedInURL': 'LinkedIn URL',
+        'githubURL': 'GitHub URL',
+        'googleScholarsURL': 'Google Scholars URL',
+        'otherURL': 'Other URL',
+        'university': 'School Name',
+        'degree': 'Degree Obtained',
+        'concentration': 'Concentration of Study',
+        'startDate': 'Start Date',
+        'endDate': 'End Date',
+        'gpa': 'GPA',
+        'technical': 'Technical Skills',
+        'laboratory': 'Laboratory Work',
+        'languages': 'Languages Known',
+        'otherSkills': 'Other Skills',
+        'orgName': 'Organization Name',
+        'jobTitle': 'Job title',
+        'jobStartDate': 'Job Start Date',
+        'jobEndDate': 'Job End Date',
+        'responsibilities': 'Job Responsibilities',
+        'projectTitle': 'Project Title',
+        'projectStartDate': 'Project Start Date',
+        'projectEndDate': 'Project End Date',
+        'projectSummary': 'Project Summary',
+        'accolades': 'Accolades',
+        'activities': 'Activities & Interests'
+    };
+    
+    var serverURL = 'https://resbuild-server.herokuapp.com/';
+    
+    function showPreview() {
+        $.ajax({
+            method: 'GET',
+            //contentType: "application/json",
+            //dataType: 'json',
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader('Authorization', 'Bearer ' + localStorage.getItem('token'));
+            },
+            url: serverURL + 'data/fetch?user_id=' + localStorage.getItem('user_id'),
+            //data: JSON.stringify(questionnaireObject),
+            success: function (result) {
+                
+                if (result) {
+                    var outputJSON = JSON.parse(result.data);
+                    
+                    var tr, val;
+                    for (var key of Object.keys(outputJSON)) {
+                        if (outputJSON[key]) {
+                            tr = $('<tr/>');
+                            tr.append("<td colspan='3' style='color: orange'>" + map[key] + "</td>");
+                            $('#preview_data').append(tr);
+                            var keys1 = Object.keys(outputJSON[key]);
+                            keys1.forEach(function (key1) {
+                                if (outputJSON[key].length) {
+                                    var keys2 = Object.keys(outputJSON[key]['' + key1 + '']);
+                                    keys2.forEach(function (key2) {
+                                        val = outputJSON[key]['' + key1 + '']['' + key2 + ''];
+                                        if (val && val !== '--Select--') {
+                                            
+                                            tr = $('<tr/>');
+                                            tr.append("<td>" + map[key2] + "</td>");
+                                            tr.append("<td colspan='2'><input type='text' style='width: 100%;' id='unique' disabled value='" + outputJSON[key]['' + key1 + '']['' + key2 + ''] + "'/></td>");
+                                            $('#preview_data').append(tr);
+                                        }
+                                    });
+                                } else {
+                                    val = outputJSON[key]['' + key1 + ''];
+                                    if (val && val !== '--Select--') {
+                                        tr = $('<tr/>');
+                                        tr.append("<td>" + map[key1] + "</td>");
+                                        tr.append("<td colspan='2'><input type='text' style='width: 100%;' id='unique' disabled value=' " + outputJSON[key]['' + key1 + ''] + "'/></td>");
+                                        $('#preview_data').append(tr);
+                                    }
+                                }
+                            });
+                        }
+                    }
+                }
+            },
+            error: function (result) {
+                alert("Couldn't retrieve data!")
+            }
+        });
+    }
+    
+    if (!localStorage.getItem('token')) {
+        window.location.replace('index.html');
+    } else {
+        showPreview();
+    }
+</script>
+</body>
+</html>

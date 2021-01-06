@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="img/logo.png">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+        
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    
+    </script>
+    <title>Resume Maker - User Details</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all">
+    <link href="//fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/intlTelInput.min.css">
+    <script>
+        if (!localStorage.getItem('token')) {
+            window.location.replace('index.html');
+        }
+    </script>
+</head>
+
+<body>
+<!-- main navigation -->
+<section class="main">
+    <div class="layer">
+        <header>
+            <div class="bottom-grid">
+                <div class="links">
+                    <!-- Navbar brand -->
+                    <ul class="links-unordered-list">
+                        <li class="active">
+                            <a class="navbar-brand" href="index.html">Resume Maker</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="links">
+                    <ul class="links-unordered-list">
+                        <li class="active">
+                            <a href="signup.html" class="">Register</a>
+                        </li>
+                        <li class="active">
+                            <a href="about.html" class="">About Us</a>
+                        </li>
+                        <li class="active">
+                            <a id="logout" class="nav-link" href>Logout
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+        </header>
+        
+        <main>
+            <!-- main container -->
+            <div class="container pt-5">
+                
+                <!-- grid row -->
+                <div class="row">
+                    
+                    <!-- grid col -->
+                    
+                    <!-- grid col -->
+                    
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <img src="img/logo.png" height="72" width="72" class="mb-4 rounded img-fluid"
+                                 alt="Resume Maker Logo">
+                        </div>
+                        <div class="text-center"><h2>Welcome to the Resume Maker</h2></div>
+                        <hr>
+                        <p>Hey There! Wanting to create a new resume? Just give us your details and we are here to help
+                            you create a resume within minutes so that you can present yourself in a better way than you
+                            could ever imagine :)</p>
+                    </div>
+                    <!-- grid col -->
+                    
+                    <div class="col-md-8 questionnaire-div">
+                        <form action="" class="questionnaire-form" id="personalInfo">
+                            <h2 class="text-center">Personal Information</h2>
+                            <div class="template">
+                                <h6 class="text-center">Please enter your personal details as they should appear on your
+                                    Curriculum
+                                    Vitae</h6>
+                                <div class="form-group required">
+                                    <label class="control-label" for="name">Full name</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="John Doe"
+                                           required>
+                                </div>
+                                <div class="form-group required">
+                                    <label class="control-label" for="emailID">Email address</label>
+                                    <input type="email" class="form-control" id="emailID" name="emailID"
+                                           placeholder="john.doe@example.com"
+                                           required>
+                                </div>
+                                <div class="form-group required">
+                                    <label class="control-label" for="contactNumber">Contact Number</label>
+                                    <input type="tel" class="form-control" id="contactNumber" name="contactNumber"
+                                           required>
+                                </div>
+                                <div class="form-group required">
+                                    <label class="control-label" for="mailingAddress">Mailing Address</label>
+                                    <textarea class="form-control" rows="2" id="mailingAddress" name="mailingAddress"
+                                              placeholder="840 SW Grove Street, Corvallis, Oregon - 97333"
+                                              required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="careerObjective">Career Objective</label>
+                                    <textarea class="form-control" rows="2" id="careerObjective" name="careerObjective"
+                                              placeholder="Actively looking for Summer Internships"></textarea>
+                                </div>
+                            </div>
+                            <div class="wthree-field">
+                                <button type="submit" class="btn btn-primary btn-block next">Next</button>
+                            </div>
+                        </form>
+                        
+                        <form action="" class="questionnaire-form d-none" id="websites">
+                            <h2 class="text-center">Your Websites / Online Presence</h2>
+                            <div class="template">
+                                <h6 class="text-center">Please provide the following URLs if you have any.</h6>
+                                <div class="form-group">
+                                    <label class="control-label" for="ownWebsite">Own Website URL</label>
+                                    <input type="url" class="form-control" id="ownWebsite" name="ownWebsite"
+                                           placeholder="http://www.jonhdoe.com">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="linkedInURL">LinkedIn URL</label>
+                                    <input type="url" class="form-control" id="linkedInURL" name="linkedInURL"
+                                           placeholder="https://www.linkedin.com/in/johndoe/">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="githubURL">GitHub URL</label>
+                                    <input type="url" class="form-control" id="githubURL" name="githubURL"
+                                           placeholder="https://github.com/johndoe">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="googleScholarsURL">Google Scholars URL</label>
+                                    <input type="url" class="form-control" id="googleScholarsURL"
+                                           name="googleScholarsURL"
+                                           placeholder="https://scholar.google.com/johndoe">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="otherURL">Other
+                                        URL</label>
+                                    <input type="url" class="form-control" id="otherURL"
+                                           name="otherURL"
+                                           placeholder="https://www.codechef.com/users/johndoe">
+                                </div>
+                            </div>
+                            
+                            <div class="wthree-field">
+                                <button type="submit" class="btn btn-primary btn-block next">Next</button>
+                                <button type="submit" class="btn btn-primary btn-block prev">Previous</button>
+                            </div>
+                        </form>
+                        
+                        <form action="" class="questionnaire-form d-none" id="education">
+                            <h2 class="text-center">Education / Academics</h2>
+                            <div class="template">
+                                <div class="form-group required">
+                                    <label class="control-label" for="university">School Name</label>
+                                    <input type="text" class="form-control" id="university" name="university"
+                                           placeholder="Oregon State University"
+                                           required>
+                                </div>
+                                <div class="form-group required">
+                                    <label class="control-label" for="degree">Degree Sought</label>
+                                    <select class="form-control" id="degree" name="degree" required>
+                                        <option>--Select--</option>
+                                        <option>High School</option>
+                                        <option>Undergraduate / Bachelors</option>
+                                        <option>Masters</option>
+                                        <option>PhD</option>
+                                    </select>
+                                </div>
+                                <div class="form-group required">
+                                    <label class="control-label" for="concentration">Concentration of study</label>
+                                    <input type="text" class="form-control" id="concentration" name="concentration"
+                                           placeholder="Computer Science"
+                                           required>
+                                </div>
+                                <div class="form-group required">
+                                    <label class="control-label" for="startDate">Start Date</label>
+                                    <input type="date" class="form-control" id="startDate" name="startDate"
+                                           placeholder="MM/dd/yyyy"
+                                           required>
+                                </div>
+                                <div class="form-group required">
+                                    <label class="control-label" for="endDate">End Date</label>
+                                    <input type="date" class="form-control" id="endDate" name="endDate"
+                                           placeholder="MM/dd/yyyy">
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="currentStudy">
+                                    <label class="control-label" for="currentStudy">I currently study here</label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="gpa">GPA (Out of 4)</label>
+                                    <input type="text" class="form-control" id="gpa" name="gpa" placeholder="3.5">
+                                </div>
+                            </div>
+                            <div class="form-group addAnother">
+                                <a href>Add another school</a>
+                            </div>
+                            <div class="wthree-field">
+                                <button type="submit" class="btn btn-primary btn-block next">Next</button>
+                                <button type="submit" class="btn btn-primary btn-block prev">Previous</button>
+                            </div>
+                        </form>
+                        
+                        <form action="" class="questionnaire-form d-none" id="skills">
+                            <h2 class="text-center">Skills</h2>
+                            <div class="template">
+                                <div class="form-group">
+                                    <label class="control-label" for="technical">Technical</label>
+                                    <input type="text" class="form-control" id="technical" name="technical"
+                                           placeholder="List Computer Languages and Programming Languages">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="laboratory">Laboratory</label>
+                                    <input type="text" class="form-control" id="laboratory" name="laboratory"
+                                           placeholder="List Scientific / Research lab techniques or tools">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="languages">Languages</label>
+                                    <input type="text" class="form-control" id="languages" name="languages"
+                                           placeholder="List foreign languages">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="otherSkills">Other Skills</label>
+                                    <input type="text" class="form-control" id="otherSkills" name="otherSkills"
+                                           placeholder="Communications, Leadership">
+                                </div>
+                            </div>
+                            <div class="wthree-field">
+                                <button type="submit" class="btn btn-primary btn-block next">Next</button>
+                                <button type="submit" class="btn btn-primary btn-block prev">Previous</button>
+                            </div>
+                        
+                        </form>
+                        
+                        <form action="" class="questionnaire-form d-none" id="experience">
+                            <h2 class="text-center">Professional Experience</h2>
+                            <div class="template">
+                                <div class="form-group">
+                                    <label class="control-label" for="orgName">Organization name</label>
+                                    <input type="text" class="form-control" id="orgName" name="orgName"
+                                           placeholder="Google LLC">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="jobTitle">Job Title</label>
+                                    <input type="text" class="form-control" id="jobTitle" name="jobTitle"
+                                           placeholder="Software Engineer">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="jobStartDate">Start Date</label>
+                                    <input type="date" class="form-control" id="jobStartDate" name="jobStartDate"
+                                           placeholder="MM/dd/yyyy">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="jobEndDate">End Date</label>
+                                    <input type="date" class="form-control" id="jobEndDate" name="jobEndDate"
+                                           placeholder="MM/dd/yyyy">
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="currentWork">
+                                    <label class="control-label" for="currentWork">I currently work here</label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="responsibilities">Responsibilities and work in
+                                        brief</label>
+                                    <textarea class="form-control" id="responsibilities"
+                                              name="responsibilities"
+                                              placeholder="Development in Google Maps"></textarea>
+                                </div>
+                            
+                            </div>
+                            <div class="form-group addAnother">
+                                <a href>Add another Experience</a>
+                            </div>
+                            <div class="wthree-field">
+                                <button type="submit" class="btn btn-primary btn-block next">Next</button>
+                                <button type="submit" class="btn btn-primary btn-block prev">Previous</button>
+                            </div>
+                        </form>
+                        
+                        <form action="" class="questionnaire-form d-none" id="projects">
+                            <h2 class="text-center">Academic Projects</h2>
+                            <div class="template">
+                                <div class="form-group">
+                                    <label class="control-label" for="projectTitle">Project Title</label>
+                                    <input type="text" class="form-control" id="projectTitle" name="projectTitle"
+                                           placeholder="ResumeMaker for CS-561">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="projectStartDate">Start Date</label>
+                                    <input type="date" class="form-control" id="projectStartDate"
+                                           name="projectStartDate"
+                                           placeholder="MM/dd/yyyy">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="projectEndDate">End Date</label>
+                                    <input type="date" class="form-control" id="projectEndDate" name="projectEndDate"
+                                           placeholder="MM/dd/yyyy">
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="currentProject">
+                                    <label class="control-label" for="currentProject">Currently working on this
+                                        project</label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="projectSummary">Project Summary</label>
+                                    <textarea type="text" class="form-control" id="projectSummary" name="projectSummary"
+                                              placeholder=""></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group addAnother">
+                                <a href>Add another project</a>
+                            </div>
+                            <div class="wthree-field">
+                                <button type="submit" class="btn btn-primary btn-block next">Next</button>
+                                <button type="submit" class="btn btn-primary btn-block prev">Previous</button>
+                            </div>
+                        </form>
+                        
+                        <form action="" class="questionnaire-form d-none" method="post" id="accoladesInterests">
+                            <h2 class="text-center">Accolades, Activities and Interests</h2>
+                            <div class="template">
+                                <div class="form-group">
+                                    <label class="control-label" for="accolades">Accolades</label>
+                                    <textarea type="text" class="form-control" id="accolades" name="accolades"
+                                              placeholder="First runner up at hackathon"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="activities">Activities and Interests</label>
+                                    <textarea type="text" class="form-control" id="activities" name="activities"
+                                              placeholder="Volunteer at OSU UHDS, Love hiking"></textarea>
+                                </div>
+                            </div>
+                            <div class="wthree-field">
+                                <button type="submit" id="questionnaireSubmit" class="btn btn-primary btn-block">Preview
+                                    &amp; Submit
+                                </button>
+                                <button type="submit" class="btn btn-primary btn-block prev">Previous</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <script src="js/modules/intlTelInput.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/modules/events-handler.js"></script>
+    </div>
+    <footer>
+        <div class="bottom-grid1">
+            <div class="links">
+                <ul class="links-unordered-list">
+                    <li class="">
+                        <a href="about.html" class="">About Us</a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="">Privacy Policy</a>
+                    </li>
+                    <li class="">
+                        <a target="_blank" href="https://pastebin.com/3WXmsxsU" class="">Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>© 2019 Key. All rights reserved </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</section>
+</body>
+</html>
